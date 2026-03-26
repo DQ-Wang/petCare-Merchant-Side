@@ -1,17 +1,56 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
+		{
+			"path": "pages/receive-orders/receive-orders",
+			"style": {
+				"navigationBarTitleText": "师傅接单"
+			}
+		},
+		{
+			"path": "pages/orders/orders",
+			"style": {
+				"navigationBarTitleText": "师傅订单"
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "工作台",
+				"navigationStyle": "custom"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "商家端",
+		"navigationBarBackgroundColor": "#f8f8f8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#b2d76e",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/receive-orders/receive-orders",
+				"iconPath": "static/tabbar/task.png",
+				"selectedIconPath": "static/tabbar/task-active.png",
+				"text": "师傅接单"
+			},
+			{
+				"pagePath": "pages/orders/orders",
+				"iconPath": "static/tabbar/order.png",
+				"selectedIconPath": "static/tabbar/order-active.png",
+				"text": "师傅订单"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/workbench.png",
+				"selectedIconPath": "static/tabbar/workbench-active.png",
+				"text": "工作台"
+			}
+		]
 	},
 	"uniIdRouter": {}
 }
